@@ -2,10 +2,10 @@
   "name": "grunt-contrib-clean",
   "description": "Clear files and folders.",
   "version": "0.1.0",
-  "homepage": "https://github.com/gruntjs/grunt-contrib",
+  "homepage": "https://github.com/gruntjs/grunt-contrib-clean",
   "author": {
-    "name": "GruntJS Contributors",
-    "url": "http://gruntjs.com/"
+    "name": "Tim Branyen",
+    "url": "http://tbranyen.com/"
   },
   "repository": {
     "type": "git",
@@ -25,14 +25,11 @@
     "node": "*"
   },
   "scripts": {
-    "test": "grunt --base ./test/ --config ./test/grunt.js"
+    "test": "grunt test"
   },
   "dependencies": {
-    "grunt": "~0.3.x",
-    "rimraf": "~2.0.x"
-  },
-  "devDependencies": {
-    "grunt": "~0.3.x"
+    "grunt-contrib-lib": "~0.1.0",
+    "rimraf": "~2.0.2"
   },
   "keywords": [
     "gruntplugin"

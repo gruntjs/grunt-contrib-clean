@@ -1,6 +1,5 @@
 # grunt-contrib-clean
-> Clear files and folders&mdash;a part of the [grunt-contrib](/gruntjs/grunt-contrib) collection.  Submitted by [Tim Branyen](/tbranyen).
-
+> Clear files and folders (part of the [grunt-contrib](/gruntjs/grunt-contrib) collection).  Submitted by [Tim Branyen](/tbranyen).
 
 ## Getting Started
 Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-contrib-clean`
@@ -54,7 +53,3 @@ clean: {
 ##### src ```string```
 
 This defines what paths this task will clean recursively (supports [grunt.template](https://github.com/cowboy/grunt/blob/master/docs/api_template.md) and [minimatch](https://github.com/isaacs/minimatch)).
-
-## License
-Copyright (c) 2012 "Cowboy" Ben Alman & contributors.
-Licensed under the MIT license.

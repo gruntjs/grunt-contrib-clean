@@ -1,5 +1,4 @@
 /**
- * Task: clean
  * Description: Clear files and folders.
  * Dependencies: rimraf
  * Contributor: @tbranyen
@@ -8,7 +7,7 @@
 module.exports = function(grunt) {
   "use strict";
 
-  var helpers = require('./helpers').init(grunt);
+  var helpers = require('grunt-contrib-lib').init(grunt);
 
   grunt.registerMultiTask("clean", "Clear files and folders", function() {
     var options = helpers.options(this);
