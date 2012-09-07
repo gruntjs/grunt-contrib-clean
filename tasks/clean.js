@@ -1,7 +1,10 @@
-/**
- * Description: Clear files and folders.
- * Dependencies: rimraf
- * Contributor: @tbranyen
+/*
+ * grunt-contrib-clean
+ * http://gruntjs.com/
+ *
+ * Copyright (c) 2012 Tim Branyen, contributors
+ * Licensed under the MIT license.
+ * https://github.com/gruntjs/grunt-contrib-clean/blob/master/LICENSE-MIT
  */
 
 module.exports = function(grunt) {
