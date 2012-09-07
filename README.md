@@ -13,7 +13,7 @@ grunt.loadNpmTasks('grunt-contrib-clean');
 [grunt]: https://github.com/cowboy/grunt
 [getting_started]: https://github.com/cowboy/grunt/blob/master/docs/getting_started.md
 
-## Overview
+### Overview
 
 Inside your `grunt.js` file, add a section named `clean`.
 
