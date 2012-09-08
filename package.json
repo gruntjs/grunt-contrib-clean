@@ -28,8 +28,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "grunt-contrib-lib": "~0.1.0",
-    "rimraf": "~2.0.2"
+    "rimraf": "~2.0.2",
+    "grunt-contrib-lib": "~0.1.0"
   },
   "keywords": [
     "gruntplugin"
