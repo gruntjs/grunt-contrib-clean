@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-clean",
   "description": "Clear files and folders.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/gruntjs/grunt-contrib-clean",
   "author": {
     "name": "Tim Branyen",
