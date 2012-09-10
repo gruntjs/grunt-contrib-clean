@@ -10,13 +10,12 @@
 module.exports = function(grunt) {
   "use strict";
 
-  var helpers = require('grunt-contrib-lib').init(grunt);
-
   grunt.registerMultiTask("clean", "Clear files and folders", function() {
+
+    var helpers = require('grunt-contrib-lib').init(grunt);
     var options = helpers.options(this);
 
     grunt.verbose.writeflags(options, "Options");
-
     var paths = grunt.file.expand(this.file.src);
 
     paths.forEach(function(path) {
