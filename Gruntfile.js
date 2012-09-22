@@ -22,9 +22,10 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     clean: {
-      short: ["test/fixtures/sample_short"],
+      test: ['tmp'],
+      short: ["tmp/sample_short"],
       long: {
-        src: ["test/fixtures/sample_long"]
+        src: ["tmp/sample_long"]
       }
     },
 
@@ -33,8 +34,20 @@ module.exports = function(grunt) {
       tasks: ['test/*_test.js']
     }
   });
-// Actually load this plugin's task(s).
+
+  // Actually load this plugin's task(s).
   grunt.loadTasks('tasks');
 
-  grunt.registerTask("default", ['jshint', 'clean', 'nodeunit']);
+  // Setup a test helper to create a folder to clean.
+  grunt.registerTask('copy', 'Copy fixtures to a temp location', function() {
+    grunt.file.copy("test/fixtures/sample_long/long.txt", "tmp/sample_long/long.txt");
+    grunt.file.copy("test/fixtures/sample_short/short.txt", "tmp/sample_short/short.txt");
+  });
+
+  // Whenever the 'test' task is run, first clean the 'tmp' dir, then run this
+  // plugin's task(s), then test the result.
+  grunt.registerTask('test', 'clean copy nodeunit');
+
+  // By default, lint and run all tests.
+  grunt.registerTask("default", ['jshint', 'copy', 'clean', 'nodeunit']);
 };
