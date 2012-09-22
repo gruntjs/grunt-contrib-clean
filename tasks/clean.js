@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     var options = helpers.options(this);
 
     grunt.verbose.writeflags(options, "Options");
-    var paths = grunt.file.expand(this.file.src);
+    var paths = grunt.file.expand(this.files[0].src);
 
     paths.forEach(function(path) {
       grunt.log.write('Cleaning "' + path + '"...');
