@@ -1,26 +1,23 @@
-var grunt = require('grunt'),
-    fs = require('fs');
+'use strict';
+
+var grunt = require('grunt');
 
 exports.clean = {
   short: function(test) {
-    'use strict';
-
     test.expect(1);
 
-    fs.exists('tmp/sample_short', function (exists) {
-      test.ok(! exists, 'should remove the short directory using clean');
-      test.done();
-    });
+    var expected = grunt.file.exists('tmp/sample_short');
+    test.ok(!expected, 'should remove the short directory using clean');
+
+    test.done();
   },
 
   long: function(test) {
-    'use strict';
-
     test.expect(1);
 
-    fs.exists('tmp/sample_long', function (exists) {
-      test.ok(! exists, 'should remove the long directory using clean');
-      test.done();
-    });
+    var expected = grunt.file.exists('tmp/sample_long');
+    test.ok(!expected, 'should remove the long directory using clean');
+
+    test.done();
   }
 };
