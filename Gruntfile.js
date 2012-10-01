@@ -3,7 +3,11 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     jshint: {
-      all: ['Gruntfile.js', '<config:nodeunit.tasks>'],
+      all: [
+        'Gruntfile.js',
+        'tasks/*.js',
+        '<config:nodeunit.tests>',
+      ],
       options: {
         curly: true,
         eqeqeq: true,
@@ -16,38 +20,38 @@ module.exports = function(grunt) {
         boss: true,
         eqnull: true,
         node: true,
-        es5: true
-      }
+        es5: true,
+      },
     },
 
     // Configuration to be run (and then tested).
     clean: {
       test: ['tmp'],
-      short: ["tmp/sample_short"],
+      short: ['tmp/sample_short'],
       long: {
-        src: ["tmp/sample_long"]
-      }
+        src: ['tmp/sample_long'],
+      },
     },
 
     // Unit tests.
     nodeunit: {
-      tasks: ['test/*_test.js']
-    }
+      tests: ['test/*_test.js'],
+    },
   });
 
   // Actually load this plugin's task(s).
   grunt.loadTasks('tasks');
 
-  // Setup a test helper to create a folder to clean.
-  grunt.registerTask('copy', 'Copy fixtures to a temp location', function() {
-    grunt.file.copy("test/fixtures/sample_long/long.txt", "tmp/sample_long/long.txt");
-    grunt.file.copy("test/fixtures/sample_short/short.txt", "tmp/sample_short/short.txt");
+  // Setup a test helper to create some folders to clean.
+  grunt.registerTask('copy', 'Copy fixtures to a temp location.', function() {
+    grunt.file.copy('test/fixtures/sample_long/long.txt', 'tmp/sample_long/long.txt');
+    grunt.file.copy('test/fixtures/sample_short/short.txt', 'tmp/sample_short/short.txt');
   });
 
-  // Whenever the 'test' task is run, first clean the 'tmp' dir, then run this
-  // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'copy', 'nodeunit']);
+  // Whenever the 'test' task is run, first create some files to be cleaned,
+  // then run this plugin's task(s), then test the result.
+  grunt.registerTask('test', ['copy', 'clean', 'nodeunit']);
 
   // By default, lint and run all tests.
-  grunt.registerTask("default", ['jshint', 'copy', 'clean', 'nodeunit']);
+  grunt.registerTask('default', ['jshint', 'test']);
 };
