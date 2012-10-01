@@ -31,6 +31,9 @@
     "rimraf": "~2.0.2",
     "grunt-contrib-lib": "~0.3.0"
   },
+  "devDependencies": {
+    "grunt": "~0.3.15"
+  },
   "keywords": [
     "gruntplugin"
   ]
