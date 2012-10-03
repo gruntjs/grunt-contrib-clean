@@ -57,4 +57,4 @@ This defines what paths this task will clean recursively (supports [grunt.templa
 
 --
 
-Task submitted by [Tim Branyen](http://github.com/tbranyen).
+*Task submitted by [Tim Branyen](http://github.com/tbranyen).*
