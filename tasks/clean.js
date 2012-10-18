@@ -6,21 +6,22 @@
  * Licensed under the MIT license.
  */
 
+'use strict';
+
 module.exports = function(grunt) {
-  'use strict';
 
   grunt.registerMultiTask('clean', 'Clean files and folders.', function() {
-
-    var helpers = require('grunt-contrib-lib').init(grunt);
-    var options = helpers.options(this);
+    // Merge task-specific and/or target-specific options with these defaults.
+    var options = this.options();
 
     grunt.verbose.writeflags(options, 'Options');
-    var paths = grunt.file.expand(this.files[0].src);
 
-    paths.forEach(function(path) {
-      grunt.log.write('Cleaning "' + path + '"...');
+    // Clean specified files / dirs.
+    var files = grunt.file.expand(grunt.util._.pluck(this.files, 'src'));
+    files.forEach(function(filepath) {
+      grunt.log.write('Cleaning "' + filepath + '"...');
       try {
-        require('rimraf').sync(path);
+        grunt.file.delete(filepath);
         grunt.log.ok();
       } catch (e) {
         grunt.log.error();
