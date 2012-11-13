@@ -1,60 +1,26 @@
-# grunt-contrib-clean
+# grunt-contrib-clean [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-clean.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-clean)
 
 > Clear files and folders.
 
+
 ## Getting Started
-Install this grunt plugin next to your project's [Gruntfile.js gruntfile][getting_started] with: `npm install grunt-contrib-clean`
+If you haven't used [grunt][] before, be sure to check out the [Getting Started][] guide, as it explains how to create a [gruntfile][Getting Started] as well as install and use grunt plugins. Once you're familiar with that process, install this plugin with this command:
 
-Then add this line to your project's `Gruntfile.js` gruntfile:
-
-```javascript
-grunt.loadNpmTasks('grunt-contrib-clean');
+```shell
+npm install grunt-contrib-clean --save-dev
 ```
 
-[grunt]: https://github.com/cowboy/grunt
-[getting_started]: https://github.com/cowboy/grunt/blob/master/docs/getting_started.md
+[grunt]: http://gruntjs.com/
+[Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
 
-### Overview
 
-Inside your `Gruntfile.js` file, add a section named `clean`.
+## Release History
 
-*Due to the destructive nature of this task, always be cautious of the paths you clean.*
+ * 2012-09-22   v0.3.0   Options no longer accepted from global config key.
+ * 2012-09-09   v0.2.0   Refactored from grunt-contrib into individual repo.
 
-### Config Examples
+---
 
-There are three formats you can use to run this task.
+Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-##### Short
-
-``` javascript
-clean: ["path/to/dir/one", "path/to/dir/two"]
-```
-
-##### Medium (specific targets with global options)
-
-``` javascript
-clean: {
-  build: ["path/to/dir/one", "path/to/dir/two"],
-  release: ["path/to/another/dir/one", "path/to/another/dir/two"]
-},
-```
-
-##### Long (specific targets with per target options)
-
-``` javascript
-clean: {
-  build: {
-    src: ["path/to/dir/one", "path/to/dir/two"]
-  }
-}
-```
-
-#### Parameters
-
-##### src ```string```
-
-This defines what paths this task will clean recursively (supports [grunt.template](https://github.com/cowboy/grunt/blob/master/docs/api_template.md) and [minimatch](https://github.com/isaacs/minimatch)).
-
---
-
-*Task submitted by [Tim Branyen](http://github.com/tbranyen).*
+*This file was generated on Tue Nov 13 2012 15:41:31.*

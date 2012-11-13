@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     grunt.verbose.writeflags(options, 'Options');
 
     // Clean specified files / dirs.
-    var files = grunt.file.expand(grunt.util._.pluck(this.files, 'src'));
+    var files = grunt.file.expand(this.file.src);
     files.forEach(function(filepath) {
       grunt.log.write('Cleaning "' + filepath + '"...');
       try {
