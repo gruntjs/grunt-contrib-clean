@@ -1,12 +1,14 @@
+# Usage Examples
+
 There are three formats you can use to run this task.
 
-##### Short
+## Short
 
 ``` javascript
 clean: ["path/to/dir/one", "path/to/dir/two"]
 ```
 
-##### Medium (specific targets with global options)
+## Medium (specific targets with global options)
 
 ``` javascript
 clean: {
@@ -15,7 +17,7 @@ clean: {
 },
 ```
 
-##### Long (specific targets with per target options)
+## Long (specific targets with per target options)
 
 ``` javascript
 clean: {
