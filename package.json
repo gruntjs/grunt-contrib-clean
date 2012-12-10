@@ -20,9 +20,9 @@
       "url": "https://github.com/gruntjs/grunt-contrib-clean/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "grunt.js",
+  "main": "Gruntfile.js",
   "engines": {
-    "node": "*"
+    "node": ">= 0.8.0"
   },
   "scripts": {
     "test": "grunt test"
@@ -32,8 +32,8 @@
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.0",
     "grunt-contrib-nodeunit": "~0.1.0",
-    "grunt-contrib-internal": "*",
-    "grunt": "~0.4.0a",
+    "grunt-contrib-internal": "~0.1.0",
+    "grunt": "~0.4.0",
     "grunt-cli": "~0.1.1"
   },
   "keywords": [
