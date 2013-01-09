@@ -19,6 +19,8 @@ _Run this task with the `grunt clean` command._
 
 *Due to the destructive nature of this task, always be cautious of the paths you clean.*
 
+_Version `0.4.x` of this plugin is compatible with Grunt `0.4.x`. Version `0.3.0` of this plugin is compatible with Grunt `0.3.x`._
+
 ### Options
 
 #### force
@@ -67,4 +69,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Wed Jan 09 2013 14:12:18.*
+*This file was generated on Wed Jan 09 2013 13:43:35.*
