@@ -30,7 +30,6 @@
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1rc5",
     "grunt-contrib-nodeunit": "~0.1.2rc5",
-    "grunt-contrib-clean": "~0.4.0rc5",
     "grunt-contrib-internal": "*",
     "grunt": "~0.4.0rc5"
   },
