@@ -60,6 +60,7 @@ clean: {
 
 ## Release History
 
+ * 2013-01-17   v0.4.0rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
  * 2013-01-08   v0.4.0rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
  * 2012-12-06   v0.4.0   Conversion to grunt v0.4 conventions. Remove node v0.6 and grunt v0.3 support. Add force option to bypass CWD check.
  * 2012-09-22   v0.3.0   Options no longer accepted from global config key.
@@ -69,4 +70,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Wed Jan 09 2013 13:43:35.*
+*This file was generated on Fri Jan 18 2013 10:17:56.*
