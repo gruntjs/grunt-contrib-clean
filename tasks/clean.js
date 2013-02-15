@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask("clean", "Clear files and folders", function() {
 
-    var helpers = require('grunt-contrib-lib').init(grunt);
+    var helpers = require('grunt-lib-contrib').init(grunt);
     var options = helpers.options(this);
 
     grunt.verbose.writeflags(options, "Options");
