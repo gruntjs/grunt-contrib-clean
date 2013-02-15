@@ -18,8 +18,9 @@ npm install grunt-contrib-clean --save-dev
 ## Clean task
 _Run this task with the `grunt clean` command._
 
-*Due to the destructive nature of this task, always be cautious of the paths you clean.*
+Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
+*Due to the destructive nature of this task, always be cautious of the paths you clean.*
 ### Options
 
 #### force
@@ -70,4 +71,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Fri Feb 15 2013 16:58:01.*
+*This file was generated on Fri Feb 15 2013 18:10:32.*
