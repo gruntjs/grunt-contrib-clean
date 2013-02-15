@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-clean",
   "description": "Clean files and folders.",
-  "version": "0.4.0rc6",
+  "version": "0.4.0",
   "homepage": "https://github.com/gruntjs/grunt-contrib-clean",
   "author": {
     "name": "Grunt Team",
@@ -28,10 +28,10 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "0.1.1rc6",
-    "grunt-contrib-nodeunit": "0.1.2rc6",
-    "grunt-contrib-internal": "*",
-    "grunt": "0.4.0rc6"
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-internal": "~0.4.0",
+    "grunt": "~0.4.0"
   },
   "keywords": [
     "gruntplugin"
