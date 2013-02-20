@@ -13,7 +13,7 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 npm install grunt-contrib-clean --save-dev
 ```
 
-One the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
 grunt.loadNpmTasks('grunt-contrib-clean');
@@ -79,4 +79,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Mon Feb 18 2013 08:35:00.*
+*This file was generated on Wed Feb 20 2013 12:36:52.*
