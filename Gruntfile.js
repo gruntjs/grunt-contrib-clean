@@ -29,6 +29,10 @@ module.exports = function(grunt) {
       long: {
         src: ['tmp/sample_long'],
       },
+      quiet: {
+        src: ['tmp/sample_quiet/*', 'tmp/sample_quiet'],
+        quiet: true,
+      },
     },
 
     // Unit tests.
@@ -49,6 +53,10 @@ module.exports = function(grunt) {
   grunt.registerTask('copy', 'Copy fixtures to a temp location.', function() {
     grunt.file.copy('test/fixtures/sample_long/long.txt', 'tmp/sample_long/long.txt');
     grunt.file.copy('test/fixtures/sample_short/short.txt', 'tmp/sample_short/short.txt');
+
+    // Add quiet.txt twice
+    grunt.file.copy('test/fixtures/sample_quiet/quiet.txt', 'tmp/sample_quiet/quiet1.txt');
+    grunt.file.copy('test/fixtures/sample_quiet/quiet.txt', 'tmp/sample_quiet/quiet2.txt');
   });
 
   // Whenever the 'test' task is run, first create some files to be cleaned,

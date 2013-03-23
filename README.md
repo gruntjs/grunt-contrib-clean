@@ -37,6 +37,12 @@ Default: false
 
 This overrides `grunt.file.delete` from blocking deletion of folders outside current working dir (CWD). Use with caution.
 
+#### quiet
+Type: `Boolean`  
+Default: false
+
+This suppresses the output so that only the number of items that were removed is logged.
+
 ### Usage Examples
 
 There are three formats you can use to run this task.
@@ -66,6 +72,18 @@ clean: {
 }
 ```
 
+#### Quiet (specific targets with quiet option)
+
+```js
+clean: {
+  build: {
+    src: ["path/to/dir/one", "path/to/dir/two"]
+    quiet: true,
+  }
+}
+```
+
+
 ## Release History
 
  * 2013-02-14   v0.4.0   First official release for Grunt 0.4.0.
@@ -79,4 +97,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Wed Mar 06 2013 17:40:55.*
+*This file was generated on Fri Mar 22 2013 19:20:00.*
