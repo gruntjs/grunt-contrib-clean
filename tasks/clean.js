@@ -14,23 +14,38 @@ module.exports = function(grunt) {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       force: false
-    });
+    }), quiet, count;
+
+    // Initialize variables
+    count = 0;
+    quiet = !!this.data.quiet;
 
     grunt.verbose.writeflags(options, 'Options');
 
     // Clean specified files / dirs.
     this.filesSrc.forEach(function(filepath) {
-      grunt.log.write('Cleaning "' + filepath + '"...');
+      if (quiet) {
+        count += 1;
+      } else {
+        grunt.log.write('Cleaning "' + filepath + '"...');
+      }
 
       try {
         grunt.file.delete(filepath, options);
-        grunt.log.ok();
+        if (!quiet) {
+          grunt.log.ok();
+        }
       } catch (e) {
         grunt.log.error();
         grunt.verbose.error(e);
         grunt.fail.warn('Clean operation failed.');
       }
     });
+
+    // Output summary
+    if (quiet) {
+      grunt.log.writeln('Cleaned %d item%s.', count, count === 1 ? '' : 's');
+    }
   });
 
 };
