@@ -26,3 +26,14 @@ clean: {
   }
 }
 ```
+
+## Quiet (specific targets with quiet option)
+
+```js
+clean: {
+  build: {
+    src: ["path/to/dir/one", "path/to/dir/two"]
+    quiet: true,
+  }
+}
+```
