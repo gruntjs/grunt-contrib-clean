@@ -26,6 +26,18 @@ clean: {
   }
 }
 ```
+## Force (specific targets with force option)
+
+```js
+clean: {
+  build: {
+    src: ["path/to/dir/one", "path/to/dir/two"]
+    options: {
+        force: true
+    }
+  }
+}
+```
 
 ## Quiet (specific targets with quiet option)
 
@@ -33,7 +45,9 @@ clean: {
 clean: {
   build: {
     src: ["path/to/dir/one", "path/to/dir/two"]
-    quiet: true,
+    options: {
+        quiet: true
+    }
   }
 }
 ```
