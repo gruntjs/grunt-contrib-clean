@@ -31,7 +31,10 @@ module.exports = function(grunt) {
       },
       quiet: {
         src: ['tmp/sample_quiet/*', 'tmp/sample_quiet'],
-        quiet: true,
+        options: {
+            force: true,
+            quiet: true
+        },
       },
     },
 
