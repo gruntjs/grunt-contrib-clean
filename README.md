@@ -68,15 +68,16 @@ clean: {
 
 ## Release History
 
- * 2013-02-14   v0.4.0   First official release for Grunt 0.4.0.
- * 2013-01-17   v0.4.0rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
- * 2013-01-08   v0.4.0rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
- * 2012-12-06   v0.4.0a   Conversion to grunt v0.4 conventions. Remove node v0.6 and grunt v0.3 support. Add force option to bypass CWD check.
- * 2012-09-22   v0.3.0   Options no longer accepted from global config key.
- * 2012-09-09   v0.2.0   Refactored from grunt-contrib into individual repo.
+ * 2013-04-16   v0.4.1   Check if file exists to avoid trying to delete a non-existent file.
+ * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
+ * 2013-01-18   v0.4.0rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
+ * 2013-01-09   v0.4.0rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
+ * 2012-12-07   v0.4.0a   Conversion to grunt v0.4 conventions. Remove node v0.6 and grunt v0.3 support. Add force option to bypass CWD check.
+ * 2012-09-23   v0.3.0   Options no longer accepted from global config key.
+ * 2012-09-10   v0.2.0   Refactored from grunt-contrib into individual repo.
 
 ---
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Wed Mar 06 2013 17:40:55.*
+*This file was generated on Tue Apr 16 2013 13:28:15.*
