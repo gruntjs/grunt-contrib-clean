@@ -1,4 +1,4 @@
-# grunt-contrib-clean [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-clean.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-clean)
+# grunt-contrib-clean [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-clean.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean)
 
 > Clean files and folders.
 
@@ -35,7 +35,13 @@ Task targets, files and options may be specified according to the grunt [Configu
 Type: `Boolean`  
 Default: false
 
-This overrides `grunt.file.delete` from blocking deletion of folders outside current working dir (CWD). Use with caution.
+This overrides this task from blocking deletion of folders outside current working dir (CWD). Use with caution.
+
+#### no-write
+Type: `Boolean`  
+Default: false
+
+Will log messages of what would happen if the task was ran but doesn't actually delete the files.
 
 ### Usage Examples
 
@@ -80,4 +86,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Tue Apr 16 2013 13:28:15.*
+*This file was generated on Mon Jul 15 2013 20:33:46.*
