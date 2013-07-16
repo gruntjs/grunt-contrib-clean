@@ -74,6 +74,7 @@ clean: {
 
 ## Release History
 
+ * 2013-07-15   v0.5.0   Use rimraf directly, version 2.2.1 to fix issue on Windows. Add no-write option to mimic grunt.file.delete behavior.
  * 2013-04-16   v0.4.1   Check if file exists to avoid trying to delete a non-existent file.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
  * 2013-01-18   v0.4.0rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
@@ -86,4 +87,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Mon Jul 15 2013 20:33:46.*
+*This file was generated on Mon Jul 15 2013 20:45:46.*
