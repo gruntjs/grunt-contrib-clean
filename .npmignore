@@ -1,0 +1,5 @@
+docs
+test
+.jshintrc
+.travis.yml
+Gruntfile.js
