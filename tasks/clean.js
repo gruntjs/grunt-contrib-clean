@@ -51,8 +51,6 @@ module.exports = function(grunt) {
       'no-write': grunt.option('no-write') === true,
     });
 
-    grunt.verbose.writeflags(options, 'Options');
-
     // Clean specified files / dirs.
     this.filesSrc.forEach(function(filepath) {
       clean(filepath, options);
