@@ -26,3 +26,9 @@ clean: {
   }
 }
 ```
+
+### Skipping Files
+```js
+// Deletes all .js files, but skips min.js files
+clean: ['path/to/dir/*.js', '!path/to/dir/*.min.js'],
+```
