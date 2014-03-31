@@ -72,6 +72,12 @@ clean: {
 }
 ```
 
+#### Skipping Files
+```js
+// Deletes all .js files, but skips min.js files
+clean: ['path/to/dir/*.js', '!path/to/dir/*.min.js'],
+```
+
 ## Release History
 
  * 2013-07-15   v0.5.0   Use rimraf directly, version 2.2.1 to fix issue on Windows. Add no-write option to mimic grunt.file.delete behavior.
