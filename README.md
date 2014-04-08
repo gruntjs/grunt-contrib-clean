@@ -1,4 +1,4 @@
-# grunt-contrib-clean [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-clean.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean)
+# grunt-contrib-clean v0.5.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) <a href="https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean"><img src="https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master" alt="Build Status: Windows" height="18" /></a>
 
 > Clean files and folders.
 
@@ -72,11 +72,12 @@ clean: {
 }
 ```
 
-#### Skipping Files
+##### Skipping Files
 ```js
 // Deletes all .js files, but skips min.js files
 clean: ['path/to/dir/*.js', '!path/to/dir/*.min.js'],
 ```
+
 
 ## Release History
 
@@ -93,4 +94,4 @@ clean: ['path/to/dir/*.js', '!path/to/dir/*.min.js'],
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Mon Jul 15 2013 20:45:46.*
+*This file was generated on Tue Apr 08 2014 15:34:51.*
