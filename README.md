@@ -73,9 +73,12 @@ clean: {
 ```
 
 ##### Skipping Files
+
 ```js
 // Deletes all .js files, but skips min.js files
-clean: ['path/to/dir/*.js', '!path/to/dir/*.min.js'],
+clean: {
+  js: ["path/to/dir/*.js", "!path/to/dir/*.min.js"]
+}
 ```
 
 
@@ -94,4 +97,4 @@ clean: ['path/to/dir/*.js', '!path/to/dir/*.min.js'],
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Tue Apr 08 2014 15:34:51.*
+*This file was generated on Tue May 06 2014 11:05:53.*
