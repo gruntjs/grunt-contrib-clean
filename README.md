@@ -67,6 +67,8 @@ clean: {
 ```js
 clean: {
   build: {
+    dot: true,
+    filter: "isFile"
     src: ["path/to/dir/one", "path/to/dir/two"]
   }
 }
