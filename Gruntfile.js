@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 
   // Whenever the 'test' task is run, first create some files to be cleaned,
   // then run this plugin's task(s), then test the result.
-  grunt.registerTask('test', ['copy', 'clean', 'nodeunit']);
+  grunt.registerTask('test', ['jshint', 'copy', 'clean', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test', 'build-contrib']);

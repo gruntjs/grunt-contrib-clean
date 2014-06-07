@@ -35,3 +35,6 @@ clean: {
   js: ["path/to/dir/*.js", "!path/to/dir/*.min.js"]
 }
 ```
+
+"Compact" and "Files Array" formats support a few [additional properties](http://gruntjs.com/configuring-tasks#files)
+which help you deal with hidden files, process dynamic mappings and so on.

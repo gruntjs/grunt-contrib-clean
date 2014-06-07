@@ -81,6 +81,9 @@ clean: {
 }
 ```
 
+"Compact" and "Files Array" formats support a few [additional properties](http://gruntjs.com/configuring-tasks#files)
+which help you deal with hidden files, process dynamic mappings and so on.
+
 
 ## Release History
 
@@ -97,4 +100,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Tue May 06 2014 11:05:53.*
+*This file was generated on Sat Jun 07 2014 14:19:43.*
