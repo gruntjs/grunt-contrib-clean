@@ -1,4 +1,4 @@
-# grunt-contrib-clean v0.5.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) <a href="https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean"><img src="https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master" alt="Build Status: Windows" height="18" /></a>
+# grunt-contrib-clean v0.6.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) <a href="https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean"><img src="https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master" alt="Build Status: Windows" height="18" /></a>
 
 > Clean files and folders.
 
@@ -87,6 +87,7 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 ## Release History
 
+ * 2014-07-27   v0.6.0   Less verbose output. README updates.
  * 2013-07-15   v0.5.0   Use rimraf directly, version 2.2.1 to fix issue on Windows. Add no-write option to mimic grunt.file.delete behavior.
  * 2013-04-16   v0.4.1   Check if file exists to avoid trying to delete a non-existent file.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
@@ -100,4 +101,4 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Sat Jun 07 2014 14:19:43.*
+*This file was generated on Sun Jul 27 2014 17:36:23.*

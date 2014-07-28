@@ -1,3 +1,8 @@
+v0.6.0:
+  date: 2014-07-27
+  changes:
+    - Less verbose output.
+    - README updates.
 v0.5.0:
   date: 2013-07-15
   changes:
