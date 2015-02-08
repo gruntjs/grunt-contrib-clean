@@ -1,19 +1,12 @@
 {
   "name": "grunt-contrib-clean",
-  "description": "Clean files and folders.",
+  "description": "Clean files and folders",
   "version": "0.6.0",
-  "homepage": "https://github.com/gruntjs/grunt-contrib-clean",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/gruntjs/grunt-contrib-clean.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gruntjs/grunt-contrib-clean/issues"
-  },
+  "repository": "gruntjs/grunt-contrib-clean",
   "licenses": [
     {
       "type": "MIT",
@@ -21,28 +14,36 @@
     }
   ],
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "rimraf": "~2.2.1"
+    "rimraf": "^2.2.1"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.3.3",
-    "grunt-contrib-internal": "~0.4.10",
-    "grunt": "~0.4.0"
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-internal": "^0.4.10",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-nodeunit": "^0.4.1"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "clean",
+    "cleanup",
+    "remove",
+    "delete",
+    "del",
+    "rm",
+    "rmrf",
+    "rimraf"
   ],
   "files": [
-    "tasks",
-    "LICENSE-MIT"
+    "tasks"
   ]
 }
