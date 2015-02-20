@@ -1,11 +1,11 @@
-# grunt-contrib-clean v0.6.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) <a href="https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean"><img src="https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master" alt="Build Status: Windows" height="18" /></a>
+# grunt-contrib-clean v0.6.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
 
-> Clean files and folders.
+> Clean files and folders
 
 
 
 ## Getting Started
-This plugin requires Grunt `~0.4.0`
+This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -101,4 +101,4 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Sun Jul 27 2014 17:36:23.*
+*This file was generated on Fri Feb 20 2015 15:12:27.*
