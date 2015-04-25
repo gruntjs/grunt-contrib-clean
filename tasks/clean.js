@@ -46,14 +46,14 @@ module.exports = function(grunt) {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       force: grunt.option('force') === true,
-      'no-write': grunt.option('no-write') === true,
+      'no-write': grunt.option('no-write') === true
     });
 
     // Clean specified files / dirs.
     this.filesSrc.forEach(function(filepath) {
       clean(filepath, options);
     });
-    grunt.log.ok(this.filesSrc.length  + ' ' + grunt.util.pluralize(this.filesSrc.length, 'path/paths') + ' cleaned.');
+    grunt.log.ok(this.filesSrc.length + ' ' + grunt.util.pluralize(this.filesSrc.length, 'path/paths') + ' cleaned.');
   });
 
 };

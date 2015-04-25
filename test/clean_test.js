@@ -3,7 +3,7 @@
 var grunt = require('grunt');
 
 exports.clean = {
-  short: function(test) {
+  shortPathTest: function(test) {
     test.expect(1);
 
     var expected = grunt.file.exists('tmp/sample_short');
@@ -11,7 +11,7 @@ exports.clean = {
 
     test.done();
   },
-  long: function(test) {
+  longPathTest: function(test) {
     test.expect(1);
 
     var expected = grunt.file.exists('tmp/sample_long');

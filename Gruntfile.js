@@ -20,21 +20,21 @@ module.exports = function(grunt) {
       ],
       options: {
         jshintrc: '.jshintrc'
-      },
+      }
     },
 
     // Configuration to be run (and then tested).
     clean: {
-      short: ['tmp/sample_short'],
-      long: {
-        src: ['tmp/sample_long'],
-      },
+      shortPathTest: ['tmp/sample_short'],
+      longPathTest: {
+        src: ['tmp/sample_long']
+      }
     },
 
     // Unit tests.
     nodeunit: {
-      tests: ['test/*_test.js'],
-    },
+      tests: ['test/*_test.js']
+    }
   });
 
   // Actually load this plugin's task(s).
