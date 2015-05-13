@@ -8,13 +8,14 @@
 
 'use strict';
 
+var async = require('async');
 var rimraf = require('rimraf');
 
 module.exports = function(grunt) {
 
-  function clean(filepath, options) {
+  function clean(filepath, options, done) {
     if (!grunt.file.exists(filepath)) {
-      return false;
+      return done();
     }
 
     // Only delete cwd or outside cwd if --force enabled. Be careful, people!
@@ -22,24 +23,26 @@ module.exports = function(grunt) {
       if (grunt.file.isPathCwd(filepath)) {
         grunt.verbose.error();
         grunt.fail.warn('Cannot delete the current working directory.');
-        return false;
+        return done();
       } else if (!grunt.file.isPathInCwd(filepath)) {
         grunt.verbose.error();
         grunt.fail.warn('Cannot delete files outside the current working directory.');
-        return false;
+        return done();
       }
     }
 
-    try {
-      // Actually delete. Or not.
-      if (!options['no-write']) {
-        rimraf.sync(filepath);
-      }
-      grunt.verbose.writeln((options['no-write'] ? 'Not actually cleaning ' : 'Cleaning ') + filepath + '...');
-    } catch (e) {
-      grunt.log.error();
-      grunt.fail.warn('Unable to delete "' + filepath + '" file (' + e.message + ').', e);
+    grunt.verbose.writeln((options['no-write'] ? 'Not actually cleaning ' : 'Cleaning ') + filepath + '...');
+    // Actually delete. Or not.
+    if (options['no-write']) {
+      return done();
     }
+    rimraf(filepath, function (err) {
+      if (err) {
+        grunt.log.error();
+        grunt.fail.warn('Unable to delete "' + filepath + '" file (' + err.message + ').', err);
+      }
+      done();
+    });
   }
 
   grunt.registerMultiTask('clean', 'Clean files and folders.', function() {
@@ -49,11 +52,16 @@ module.exports = function(grunt) {
       'no-write': grunt.option('no-write') === true
     });
 
+    var done = this.async();
+
     // Clean specified files / dirs.
-    this.filesSrc.forEach(function(filepath) {
-      clean(filepath, options);
+    var files = this.filesSrc;
+    async.eachSeries(files, function (filepath, cb) {
+      clean(filepath, options, cb);
+    }, function (err) {
+      grunt.log.ok(files.length + ' ' + grunt.util.pluralize(files.length, 'path/paths') + ' cleaned.');
+      done(err);
     });
-    grunt.log.ok(this.filesSrc.length + ' ' + grunt.util.pluralize(this.filesSrc.length, 'path/paths') + ' cleaned.');
   });
 
 };
