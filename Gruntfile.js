@@ -28,7 +28,8 @@ module.exports = function(grunt) {
       shortPathTest: ['tmp/sample_short'],
       longPathTest: {
         src: ['tmp/sample_long']
-      }
+      },
+      exclude: ['tmp/end_01/**/*', '!tmp/end_01/1.txt']
     },
 
     // Unit tests.
@@ -49,6 +50,13 @@ module.exports = function(grunt) {
   grunt.registerTask('copy', 'Copy fixtures to a temp location.', function() {
     grunt.file.copy('test/fixtures/sample_long/long.txt', 'tmp/sample_long/long.txt');
     grunt.file.copy('test/fixtures/sample_short/short.txt', 'tmp/sample_short/short.txt');
+    var cwd = 'test/fixtures/start';
+    grunt.file.expand({
+      cwd: cwd
+    }, '**/*')
+    .forEach(function (file) {
+      grunt.file.copy(cwd + '/' + file, 'tmp/end_01/' + file);
+    });
   });
 
   // Whenever the 'test' task is run, first create some files to be cleaned,
