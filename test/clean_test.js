@@ -22,7 +22,12 @@ exports.clean = {
   },
   exclude: function (test) {
     var res = dircompare.compareSync('test/expected/end_01', 'tmp/end_01');
-    test.equal(true, res.equal, 'should match exclusions');
+    test.equal(true, res.same, 'should match exclusions');
+    test.done();
+  },
+  excludeSub: function (test) {
+    var res = dircompare.compareSync('test/expected/end_02', 'tmp/end_02');
+    test.equal(true, res.same, 'should match exclusions for sub');
     test.done();
   }
 };
