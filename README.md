@@ -1,4 +1,4 @@
-# grunt-contrib-clean v0.6.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
+# grunt-contrib-clean v0.7.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
 
 > Clean files and folders
 
@@ -33,15 +33,15 @@ Task targets, files and options may be specified according to the grunt [Configu
 
 #### force
 Type: `Boolean`  
-Default: false
+Default: `false`
 
 This overrides this task from blocking deletion of folders outside current working dir (CWD). Use with caution.
 
 #### no-write
 Type: `Boolean`  
-Default: false
+Default: `false`
 
-Will log messages of what would happen if the task was run but doesn't actually delete the files.
+Will log messages of what would happen if the task was ran but doesn't actually delete the files.
 
 ### Usage Examples
 
@@ -87,6 +87,7 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 ## Release History
 
+ * 2015-11-13   v0.7.0   Dependency updates
  * 2014-07-27   v0.6.0   Less verbose output. README updates.
  * 2013-07-15   v0.5.0   Use rimraf directly, version 2.2.1 to fix issue on Windows. Add no-write option to mimic grunt.file.delete behavior.
  * 2013-04-16   v0.4.1   Check if file exists to avoid trying to delete a non-existent file.
@@ -101,4 +102,4 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Fri Feb 20 2015 15:12:27.*
+*This file was generated on Fri Nov 13 2015 14:04:25.*
