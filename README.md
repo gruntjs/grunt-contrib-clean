@@ -41,7 +41,8 @@ This overrides this task from blocking deletion of folders outside current worki
 Type: `Boolean`  
 Default: `false`
 
-Will log messages of what would happen if the task was ran but doesn't actually delete the files.
+Will not actually delete any files or directories.
+If the task is run with the `--verbose` flag, the task will log messages of what files would have be deleted.
 
 ### Usage Examples
 
@@ -102,4 +103,4 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Fri Nov 13 2015 14:04:25.*
+*This file was generated on Fri Jan 22 2016 11:08:32.*
