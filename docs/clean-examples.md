@@ -27,6 +27,31 @@ clean: {
 }
 ```
 
+"Compact" and "Files Array" formats support a few [additional properties](http://gruntjs.com/configuring-tasks#files)
+which help you deal with hidden files, process dynamic mappings and so on.
+
+## Globbing Patterns
+
+Although documented [in the Grunt Docs](http://gruntjs.com/configuring-tasks#globbing-patterns), here are some globbing pattern examples to acheive some common tasks:
+
+```js
+clean: {
+  folder: ['path/to/dir/'],
+  folder_v2: ['path/to/dir/**'],
+  contents: ['path/to/dir/*'],
+  subfolders: ['path/to/dir/*/'],
+  css: ['path/to/dir/*.css'],
+  all_css: ['path/to/dir/**/*.css']
+}
+```
+
+* __`folder`:__ Deletes the `dir/` folder
+* __`folder_v2`:__ Deletes the `dir/` folder
+* __`contents`:__ Keeps the `dir/` folder, but deletes the contents
+* __`subfolders`:__ Keeps the files inside the `dir/` folder, but deletes all subfolders
+* __`css`:__ Deletes all `*.css` files inside the `dir/` folder, excluding subfolders
+* __`all_css`:__ Deletes all `*.css` files inside the `dir/` folder and its subfolders
+
 ### Skipping Files
 
 ```js
@@ -35,9 +60,6 @@ clean: {
   js: ["path/to/dir/*.js", "!path/to/dir/*.min.js"]
 }
 ```
-
-"Compact" and "Files Array" formats support a few [additional properties](http://gruntjs.com/configuring-tasks#files)
-which help you deal with hidden files, process dynamic mappings and so on.
 
 #### Options
 
