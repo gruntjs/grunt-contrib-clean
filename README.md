@@ -44,6 +44,8 @@ Default: `false`
 Will not actually delete any files or directories.
 If the task is run with the `--verbose` flag, the task will log messages of what files would have be deleted.
 
+_Note: As this task property contains a hyphen, you will need to surround it with quotes._
+
 ### Usage Examples
 
 There are three formats you can use to run this task.
@@ -103,4 +105,4 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Fri Jan 22 2016 11:08:32.*
+*This file was generated on Fri Jan 22 2016 11:09:53.*
