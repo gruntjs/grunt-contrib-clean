@@ -9,22 +9,22 @@
   "repository": "gruntjs/grunt-contrib-clean",
   "license": "MIT",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">= 0.10.0"
   },
   "main": "tasks/clean.js",
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "rimraf": "^2.2.1"
+    "async": "^1.5.2",
+    "rimraf": "^2.5.1"
   },
   "devDependencies": {
     "dir-compare": "0.0.2",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-internal": "^0.4.10",
-    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-jshint": "^0.12.0",
     "grunt-contrib-nodeunit": "^0.4.1"
   },
   "keywords": [
