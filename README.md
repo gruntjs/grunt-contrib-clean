@@ -41,7 +41,10 @@ This overrides this task from blocking deletion of folders outside current worki
 Type: `Boolean`  
 Default: `false`
 
-Will log messages of what would happen if the task was ran but doesn't actually delete the files.
+Will not actually delete any files or directories.
+If the task is run with the `--verbose` flag, the task will log messages of what files would have be deleted.
+
+_Note: As this task property contains a hyphen, you will need to surround it with quotes._
 
 ### Usage Examples
 
@@ -72,6 +75,31 @@ clean: {
 }
 ```
 
+"Compact" and "Files Array" formats support a few [additional properties](http://gruntjs.com/configuring-tasks#files)
+which help you deal with hidden files, process dynamic mappings and so on.
+
+#### Globbing Patterns
+
+Although documented [in the Grunt Docs](http://gruntjs.com/configuring-tasks#globbing-patterns), here are some globbing pattern examples to achieve some common tasks:
+
+```js
+clean: {
+  folder: ['path/to/dir/'],
+  folder_v2: ['path/to/dir/**'],
+  contents: ['path/to/dir/*'],
+  subfolders: ['path/to/dir/*/'],
+  css: ['path/to/dir/*.css'],
+  all_css: ['path/to/dir/**/*.css']
+}
+```
+
+* __`folder`:__ Deletes the `dir/` folder
+* __`folder_v2`:__ Deletes the `dir/` folder
+* __`contents`:__ Keeps the `dir/` folder, but deletes the contents
+* __`subfolders`:__ Keeps the files inside the `dir/` folder, but deletes all subfolders
+* __`css`:__ Deletes all `*.css` files inside the `dir/` folder, excluding subfolders
+* __`all_css`:__ Deletes all `*.css` files inside the `dir/` folder and its subfolders
+
 ##### Skipping Files
 
 ```js
@@ -81,8 +109,38 @@ clean: {
 }
 ```
 
-"Compact" and "Files Array" formats support a few [additional properties](http://gruntjs.com/configuring-tasks#files)
-which help you deal with hidden files, process dynamic mappings and so on.
+###### Options
+
+Options can be specified for all `clean` tasks and for each `clean:target`.
+
+####### All tasks
+
+```js
+// Prevents all targets from deleting any files
+clean: {
+  options: {
+    'no-write': true
+  },
+  build: ['dev/build'],
+  release: ['dist']
+}
+```
+
+####### Per-target
+
+```js
+// Will delete files for `build` target
+// Will NOT delete files for `release` target
+clean: {
+  build: ['dev/build'],
+  release: {
+    options: {
+      'no-write': true
+    },
+    src: ['dist']
+  }
+}
+```
 
 
 ## Release History
@@ -102,4 +160,4 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Fri Nov 13 2015 14:04:25.*
+*This file was generated on Sat Feb 13 2016 14:48:53.*
