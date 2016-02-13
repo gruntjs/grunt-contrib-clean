@@ -80,7 +80,7 @@ which help you deal with hidden files, process dynamic mappings and so on.
 
 #### Globbing Patterns
 
-Although documented [in the Grunt Docs](http://gruntjs.com/configuring-tasks#globbing-patterns), here are some globbing pattern examples to acheive some common tasks:
+Although documented [in the Grunt Docs](http://gruntjs.com/configuring-tasks#globbing-patterns), here are some globbing pattern examples to achieve some common tasks:
 
 ```js
 clean: {
@@ -160,4 +160,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Fri Jan 22 2016 12:07:21.*
+*This file was generated on Sat Feb 13 2016 14:48:53.*
