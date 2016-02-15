@@ -1,3 +1,9 @@
+v1.0.0:
+  date: 2016-02-15
+  changes:
+    - Drop support for Node.js v0.8
+    - Grunt peer dependency tagged `>= 0.4.5`
+    - Dependency updates
 v0.7.0:
   date: 2015-11-13
   changes:
