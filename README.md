@@ -144,15 +144,15 @@ clean: {
 
 ## Release History
 
- * 2016-02-15   v1.0.0   Drop support for Node.js v0.8 Grunt peer dependency tagged `>= 0.4.5` Dependency updates
- * 2015-11-13   v0.7.0   Dependency updates
+ * 2016-02-15   v1.0.0   Drop support for Node.js v0.8. Grunt peer dependency tagged `>= 0.4.5`. Dependency updates.
+ * 2015-11-13   v0.7.0   Dependency updates.
  * 2014-07-27   v0.6.0   Less verbose output. README updates.
- * 2013-07-15   v0.5.0   Use rimraf directly, version 2.2.1 to fix issue on Windows. Add no-write option to mimic grunt.file.delete behavior.
+ * 2013-07-15   v0.5.0   Use rimraf directly, version 2.2.1 to fix issue on Windows. Add `no-write` option to mimic `grunt.file.delete` behavior.
  * 2013-04-16   v0.4.1   Check if file exists to avoid trying to delete a non-existent file.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
  * 2013-01-18   v0.4.0rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
- * 2013-01-09   v0.4.0rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.
- * 2012-12-07   v0.4.0a   Conversion to grunt v0.4 conventions. Remove node v0.6 and grunt v0.3 support. Add force option to bypass CWD check.
+ * 2013-01-09   v0.4.0rc5   Updating to work with grunt v0.4.0rc5. Switching to `this.filesSrc` API.
+ * 2012-12-07   v0.4.0a   Conversion to grunt v0.4 conventions. Remove Node.js v0.6 and grunt v0.3 support. Add `force` option to bypass CWD check.
  * 2012-09-23   v0.3.0   Options no longer accepted from global config key.
  * 2012-09-10   v0.2.0   Refactored from grunt-contrib into individual repo.
 
@@ -160,4 +160,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Fri Mar 04 2016 16:37:18.*
+*This file was generated on Fri Mar 18 2016 18:47:13.*
