@@ -5,15 +5,15 @@ There are three formats you can use to run this task.
 ## Short
 
 ```js
-clean: ["path/to/dir/one", "path/to/dir/two"]
+clean: ['path/to/dir/one', 'path/to/dir/two']
 ```
 
 ## Medium (specific targets with global options)
 
 ```js
 clean: {
-  build: ["path/to/dir/one", "path/to/dir/two"],
-  release: ["path/to/another/dir/one", "path/to/another/dir/two"]
+  build: ['path/to/dir/one', 'path/to/dir/two'],
+  release: ['path/to/another/dir/one', 'path/to/another/dir/two']
 },
 ```
 
@@ -22,7 +22,7 @@ clean: {
 ```js
 clean: {
   build: {
-    src: ["path/to/dir/one", "path/to/dir/two"]
+    src: ['path/to/dir/one', 'path/to/dir/two']
   }
 }
 ```
@@ -57,7 +57,7 @@ clean: {
 ```js
 // Deletes all .js files, but skips min.js files
 clean: {
-  js: ["path/to/dir/*.js", "!path/to/dir/*.min.js"]
+  js: ['path/to/dir/*.js', '!path/to/dir/*.min.js']
 }
 ```
 
