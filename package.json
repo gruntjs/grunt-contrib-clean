@@ -26,9 +26,6 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-nodeunit": "^1.0.0"
   },
-  "peerDependencies": {
-    "grunt": ">=0.4.5"
-  },
   "keywords": [
     "gruntplugin",
     "clean",
