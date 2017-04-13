@@ -1,4 +1,4 @@
-# grunt-contrib-clean v1.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
+# grunt-contrib-clean v1.1.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
 
 > Clean files and folders
 
@@ -144,6 +144,7 @@ clean: {
 
 ## Release History
 
+ * 2017-04-12   v1.1.0   Update grunt to 1.0.0 Update to docs and changelog Update internal modules
  * 2016-02-15   v1.0.0   Drop support for Node.js v0.8. Grunt peer dependency tagged `>= 0.4.5`. Dependency updates.
  * 2015-11-13   v0.7.0   Dependency updates.
  * 2014-07-27   v0.6.0   Less verbose output. README updates.
@@ -160,4 +161,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Tue Apr 05 2016 18:06:38.*
+*This file was generated on Wed Apr 12 2017 20:36:15.*

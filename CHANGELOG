@@ -1,3 +1,9 @@
+v1.1.0:
+  date: 2017-04-12
+  changes:
+    - Update grunt to 1.0.0
+    - Update to docs and changelog
+    - Update internal modules
 v1.0.0:
   date: 2016-02-15
   changes:
