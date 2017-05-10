@@ -20,7 +20,7 @@
     "rimraf": "^2.5.1"
   },
   "devDependencies": {
-    "dir-compare": "0.0.2",
+    "dir-compare": "^1.0.1",
     "grunt": "^1.0.0",
     "grunt-contrib-internal": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
