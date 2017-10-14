@@ -9,12 +9,17 @@
 'use strict';
 
 var async = require('async');
+var fs = require("fs");
 var rimraf = require('rimraf');
 
 module.exports = function(grunt) {
 
   function clean(filepath, options, done) {
+
     if (!grunt.file.exists(filepath)) {
+      try {
+        fs.unlinkSync(filepath);
+      } catch (err) {}
       return done();
     }
 
