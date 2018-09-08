@@ -1,9 +1,14 @@
+v2.0.0:
+  date: 2018-09-08
+  changes:
+    - Update all dependencies.
+    - Drop Node.js < 6 support.
 v1.1.0:
   date: 2017-04-12
   changes:
-    - Update grunt to 1.0.0
-    - Update to docs and changelog
-    - Update internal modules
+    - Update grunt to 1.0.0.
+    - Updates to docs and changelog.
+    - Update internal modules.
 v1.0.0:
   date: 2016-02-15
   changes:

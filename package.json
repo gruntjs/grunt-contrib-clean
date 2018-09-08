@@ -1,30 +1,30 @@
 {
   "name": "grunt-contrib-clean",
   "description": "Clean files and folders",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "author": {
     "name": "Grunt Team",
-    "url": "http://gruntjs.com/"
+    "url": "https://gruntjs.com/"
   },
   "repository": "gruntjs/grunt-contrib-clean",
   "license": "MIT",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">=6"
   },
   "main": "tasks/clean.js",
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "async": "^2.5.0",
-    "rimraf": "^2.6.1"
+    "async": "^2.6.1",
+    "rimraf": "^2.6.2"
   },
   "devDependencies": {
     "dir-compare": "^1.4.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-internal": "^1.2.3",
+    "grunt": "^1.0.3",
+    "grunt-contrib-internal": "^3.1.0",
     "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-nodeunit": "^1.0.0"
+    "grunt-contrib-nodeunit": "^2.0.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.5"
