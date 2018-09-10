@@ -1,4 +1,4 @@
-# grunt-contrib-clean v1.1.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
+# grunt-contrib-clean v2.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
 
 > Clean files and folders
 
@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+If you haven't used [Grunt](https://gruntjs.com/) before, be sure to check out the [Getting Started](https://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](https://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
 npm install grunt-contrib-clean --save-dev
@@ -18,14 +18,14 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-contrib-clean');
 ```
 
-*This plugin was designed to work with Grunt 0.4.x. If you're still using grunt v0.3.x it's strongly recommended that [you upgrade](http://gruntjs.com/upgrading-from-0.3-to-0.4), but in case you can't please use [v0.3.2](https://github.com/gruntjs/grunt-contrib-clean/tree/grunt-0.3-stable).*
+*This plugin was designed to work with Grunt 0.4.x. If you're still using grunt v0.3.x it's strongly recommended that [you upgrade](https://gruntjs.com/upgrading-from-0.3-to-0.4), but in case you can't please use [v0.3.2](https://github.com/gruntjs/grunt-contrib-clean/tree/grunt-0.3-stable).*
 
 
 
 ## Clean task
 _Run this task with the `grunt clean` command._
 
-Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
+Task targets, files and options may be specified according to the grunt [Configuring tasks](https://gruntjs.com/configuring-tasks) guide.
 
 *Due to the destructive nature of this task, always be cautious of the paths you clean.*
 ### Options
@@ -74,12 +74,12 @@ clean: {
 }
 ```
 
-"Compact" and "Files Array" formats support a few [additional properties](http://gruntjs.com/configuring-tasks#files)
+"Compact" and "Files Array" formats support a few [additional properties](https://gruntjs.com/configuring-tasks#files)
 which help you deal with hidden files, process dynamic mappings and so on.
 
 #### Globbing Patterns
 
-Although documented [in the Grunt Docs](http://gruntjs.com/configuring-tasks#globbing-patterns), here are some globbing pattern examples to achieve some common tasks:
+Although documented [in the Grunt Docs](https://gruntjs.com/configuring-tasks#globbing-patterns), here are some globbing pattern examples to achieve some common tasks:
 
 ```js
 clean: {
@@ -144,7 +144,8 @@ clean: {
 
 ## Release History
 
- * 2017-04-12   v1.1.0   Update grunt to 1.0.0 Update to docs and changelog Update internal modules
+ * 2018-09-08   v2.0.0   Update all dependencies. Drop Node.js < 6 support.
+ * 2017-04-12   v1.1.0   Update grunt to 1.0.0. Updates to docs and changelog. Update internal modules.
  * 2016-02-15   v1.0.0   Drop support for Node.js v0.8. Grunt peer dependency tagged `>= 0.4.5`. Dependency updates.
  * 2015-11-13   v0.7.0   Dependency updates.
  * 2014-07-27   v0.6.0   Less verbose output. README updates.
@@ -161,4 +162,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Wed Apr 12 2017 20:36:15.*
+*This file was generated on Sat Sep 08 2018 11:53:35.*
