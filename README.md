@@ -112,7 +112,7 @@ clean: {
 
 Options can be specified for all `clean` tasks and for each `clean:target`.
 
-####### All tasks
+* All tasks
 
 ```js
 // Prevents all targets from deleting any files
@@ -125,7 +125,7 @@ clean: {
 }
 ```
 
-####### Per-target
+* Per-target
 
 ```js
 // Will delete files for `build` target
