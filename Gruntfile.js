@@ -10,6 +10,8 @@
 
 module.exports = function(grunt) {
 
+  var fs = require('fs');
+
   // Project configuration.
   grunt.initConfig({
     jshint: {
@@ -30,7 +32,8 @@ module.exports = function(grunt) {
         src: ['tmp/sample_long']
       },
       exclude: ['tmp/end_01/**/*', '!tmp/end_01/1.txt'],
-      excludeSub: ['tmp/end_02/**/*.*', '!tmp/end_02/2/**/*']
+      excludeSub: ['tmp/end_02/**/*.*', '!tmp/end_02/2/**/*'],
+      symlink: ['tmp/symlink']
     },
 
     // Unit tests.
@@ -51,6 +54,8 @@ module.exports = function(grunt) {
   grunt.registerTask('copy', 'Copy fixtures to a temp location.', function() {
     grunt.file.copy('test/fixtures/sample_long/long.txt', 'tmp/sample_long/long.txt');
     grunt.file.copy('test/fixtures/sample_short/short.txt', 'tmp/sample_short/short.txt');
+
+    fs.symlinkSync('tmp/broken-symlink', 'tmp/symlink', 'dir');
 
     var cwd = 'test/fixtures/start';
     grunt.file.expand({
