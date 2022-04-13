@@ -16,7 +16,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "rimraf": "^2.6.2"
   },
   "devDependencies": {
