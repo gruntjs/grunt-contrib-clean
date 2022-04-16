@@ -1,4 +1,4 @@
-# grunt-contrib-clean v2.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
+# grunt-contrib-clean v2.0.0 [![Build Status](https://github.com/gruntjs/grunt-contrib-clean/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-clean/actions?workflow=Tests)
 
 > Clean files and folders
 
@@ -144,6 +144,7 @@ clean: {
 
 ## Release History
 
+ * 2022-04-15   v2.0.1   Update all dependencies. Requires node.js > 12.
  * 2018-09-08   v2.0.0   Update all dependencies. Drop Node.js < 6 support.
  * 2017-04-12   v1.1.0   Update grunt to 1.0.0. Updates to docs and changelog. Update internal modules.
  * 2016-02-15   v1.0.0   Drop support for Node.js v0.8. Grunt peer dependency tagged `>= 0.4.5`. Dependency updates.
@@ -162,4 +163,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Sat Sep 08 2018 11:53:35.*
+*This file was generated on Fri Apr 15 2022 21:07:19.*
