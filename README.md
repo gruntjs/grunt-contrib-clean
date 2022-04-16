@@ -144,6 +144,7 @@ clean: {
 
 ## Release History
 
+ * 2022-04-15   v2.0.1   Update all dependencies. Requires node.js > 12.
  * 2018-09-08   v2.0.0   Update all dependencies. Drop Node.js < 6 support.
  * 2017-04-12   v1.1.0   Update grunt to 1.0.0. Updates to docs and changelog. Update internal modules.
  * 2016-02-15   v1.0.0   Drop support for Node.js v0.8. Grunt peer dependency tagged `>= 0.4.5`. Dependency updates.
@@ -162,4 +163,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Fri Apr 15 2022 21:06:16.*
+*This file was generated on Fri Apr 15 2022 21:07:19.*
