@@ -16,11 +16,11 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "async": "^3.2.2",
+    "async": "^3.2.3",
     "rimraf": "^2.6.2"
   },
   "devDependencies": {
-    "dir-compare": "^1.4.0",
+    "dir-compare": "^4.0.0",
     "grunt": "^1.5.2",
     "grunt-contrib-internal": "^7.0.0",
     "grunt-contrib-jshint": "^1.1.0",
