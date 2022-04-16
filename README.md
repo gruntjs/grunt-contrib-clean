@@ -1,4 +1,4 @@
-# grunt-contrib-clean v2.0.0 [![Build Status](https://github.com/gruntjs/grunt-contrib-clean/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-clean/actions?workflow=Tests)
+# grunt-contrib-clean v2.0.1 [![Build Status](https://github.com/gruntjs/grunt-contrib-clean/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-clean/actions?workflow=Tests)
 
 > Clean files and folders
 
