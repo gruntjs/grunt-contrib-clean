@@ -9,7 +9,7 @@
   "repository": "gruntjs/grunt-contrib-clean",
   "license": "MIT",
   "engines": {
-    "node": ">=6"
+    "node": ">=12"
   },
   "main": "tasks/clean.js",
   "scripts": {
@@ -21,10 +21,10 @@
   },
   "devDependencies": {
     "dir-compare": "^1.4.0",
-    "grunt": "^1.0.3",
-    "grunt-contrib-internal": "^3.1.0",
+    "grunt": "^1.5.2",
+    "grunt-contrib-internal": "^7.0.0",
     "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-nodeunit": "^2.0.0"
+    "grunt-contrib-nodeunit": "^4.0.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.5"

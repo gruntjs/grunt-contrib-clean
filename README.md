@@ -1,4 +1,4 @@
-# grunt-contrib-clean v2.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-clean.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-clean) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/li28411ceq3n833d/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-clean/branch/master)
+# grunt-contrib-clean v2.0.0 [![Build Status](https://github.com/gruntjs/grunt-contrib-clean/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-clean/actions?workflow=Tests)
 
 > Clean files and folders
 
@@ -162,4 +162,4 @@ clean: {
 
 Task submitted by [Tim Branyen](http://tbranyen.com/)
 
-*This file was generated on Sat Sep 08 2018 11:53:35.*
+*This file was generated on Fri Apr 15 2022 21:06:16.*
