@@ -16,15 +16,15 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "async": "^3.2.3",
-    "rimraf": "^2.6.2"
+    "async": "^3.2.4",
+    "rimraf": "^2.7.1"
   },
   "devDependencies": {
     "dir-compare": "^4.0.0",
-    "grunt": "^1.5.2",
-    "grunt-contrib-internal": "^7.0.0",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-nodeunit": "^4.0.0"
+    "grunt": "^1.6.1",
+    "grunt-contrib-internal": "^8.1.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-nodeunit": "^5.0.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.5"
@@ -42,6 +42,5 @@
   ],
   "files": [
     "tasks"
-  ],
-  "appveyor_id": "li28411ceq3n833d"
+  ]
 }
