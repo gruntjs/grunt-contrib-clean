@@ -29,5 +29,10 @@ exports.clean = {
     var res = dircompare.compareSync('test/expected/end_02', 'tmp/end_02');
     test.equal(true, res.same, 'should match exclusions for sub');
     test.done();
+  },
+  symlink: function (test) {
+    var res = grunt.file.exists('tmp/symlink');
+    test.equal(false, res, 'should delete broken symlink');
+    test.done();
   }
 };
