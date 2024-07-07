@@ -9,7 +9,7 @@
 'use strict';
 
 var async = require('async');
-var rimraf = require('rimraf');
+var rimraf = require('rimraf').rimraf;
 
 module.exports = function(grunt) {
 
@@ -36,12 +36,11 @@ module.exports = function(grunt) {
     if (options['no-write']) {
       return done();
     }
-    rimraf(filepath, function (err) {
-      if (err) {
-        grunt.log.error();
-        grunt.fail.warn('Unable to delete "' + filepath + '" file (' + err.message + ').', err);
-      }
+    rimraf(filepath).then(function() {
       done();
+    }).catch(function(err) {
+      grunt.log.error();
+      grunt.fail.warn('Unable to delete "' + filepath + '" file (' + err.message + ').', err);
     });
   }
 
